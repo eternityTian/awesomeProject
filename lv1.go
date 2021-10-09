@@ -37,7 +37,7 @@ func calculate(str, operator string) float64 { //传入计算式和运算符，�
 		case "+":
 			sum += i
 		case "-":
-			if key == 0 {
+			if key == 0 { //减法第一项应作为第一个被减数
 				sum = i
 			} else {
 				sum -= i
@@ -47,7 +47,7 @@ func calculate(str, operator string) float64 { //传入计算式和运算符，�
 		case "x":
 			sum *= i
 		case "/":
-			if key == 0 {
+			if key == 0 { //第一项设为被除数
 				sum = i
 			} else {
 				sum /= i
